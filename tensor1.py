@@ -47,6 +47,7 @@ ns=tf.constant([[10,7],[3,4],[2,5]])
 ns.ndim
 ns
 tf.random.shuffle(ns,seed=42)
+
 ar=tf.Variable([[[1,2,3],[1,4,5],[4,3,2]],[[3,4,5],[5,6,7],[4,7,5]]])
 ar=tf.random.shuffle(ar,seed=42)
 ar

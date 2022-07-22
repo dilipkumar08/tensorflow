@@ -5,3 +5,4 @@ model=tf.keras.Sequential([tf.keras.layers.Dense(100,activation=None),
                           tf.keras.layers.Dense(1)])
 model.compile(loss=tf.keras.losses.mae,optimizer=tf.keras.optimizers.Adam(lr=0.06),metrics=['mae'])
 model.fit(tf.expand_dims(X,axis=1),Y,epochs=300)
+model.predict([30])
